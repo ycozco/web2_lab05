@@ -1,6 +1,4 @@
-﻿#PS_LABS
-# INFORME DE LABORATORIO 04
-<div align="center">
+﻿<div align="center">
 <table>
     <theader>
         <tr>
@@ -247,6 +245,10 @@ Quit the server with CONTROL-C.
 ```
 - Podemos acceder al panel de administracion de nuestro proyecto en la direccion: - http://127.0.0.1:8000/admin
 
+- Podemos ver el inicio de sesion, donde debemos iniciar con los datos de nuestro superusuario:
+![Login](images/login.png)
+- Al iniciar sesion nos dirige al panel de administracion:
+![AdminPanel](images/panel_admin.png)
 </tr>
 <tr>
 
