@@ -1,4 +1,6 @@
-﻿<div align="center">
+﻿#PS_LABS
+# INFORME DE LABORATORIO 04
+<div align="center">
 <table>
     <theader>
         <tr>
@@ -243,24 +245,6 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 
 ```
-- Podemos acceder al panel de administracion de nuestro proyecto en la direccion: - http://127.0.0.1:8000/admin
-
-- Podemos ver el inicio de sesion, donde debemos iniciar con los datos de nuestro superusuario:
-![Login](images/login.png)
-- Al iniciar sesion nos dirige al panel de administracion:
-![AdminPanel](images/panel_admin.png)
-- En el panel de administracion, nos dirijimos donde el modelo de nuestro blog (posts)
-![AdminPanelPosts](images/panel_admin_posts.png)
-- En este panel podemos crear nuevos posts de la forma 
-![AdminPanelPosts](images/panel_admin_posts_create.png)
-- Damos click sobre algun elemento previamente creado, para poder ver mas detalles, tenemos la opcion de editar todas las casillas
-![AdminPanelPosts](images/panel_admin_posts_view.png)
-- En la opcion Editar, podemos editar el post que deseemos.
-![AdminPanelPosts](images/panel_admin_posts_edit.png)
-- En la opcion Eliminar, podemos eliminar el post que deseemos.
-![AdminPanelPosts](images/panel_admin_posts_del1.png)
-![AdminPanelPosts](images/panel_admin_posts_del2.png)
-
 </tr>
 <tr>
 
@@ -276,9 +260,150 @@ Quit the server with CONTROL-C.
 
 
 <tr><td colspan="6">II. SOLUCIÓN DE CUESTIONARIO: <br>
+- ¿Cuál es un estándar de codificación para Python? Ejemplo: Para PHP en el proyecto Pear https://pear.php.net/manual/en/standards.php
+Asi como en PHP se usa Pear python tiene a PEP 8 >https://peps.python.org/pep-0008/
+    
+- ¿Qué diferencias existen entre EasyInstall, pip, y PyPM?
+Los tres son instaladores, compiladores y administradores de paquetes de python las diferencias radican en
+PyPM no es gratuito y solo se usa con ActiveState ActivePython
+En EasyInstall si se interrumpe por alguna razón la instalacion se dejaron algunos rastros, con pip no ocurre esto
+Pip no instala paquetes binarios
+EasyInstall no actualiza todos los paquetes ni los lista por completo
+EasyInstall busca en el PythonPackageIndex(PyPi) los paquetes deseados
+EasyInstall está inspirado en rubygems y esta basado en el formato PythonEggs
+PyPM esta inspirado en el administrador de paquetes de perl
+PyPM utiliza colecciones de paquetes precompilados llamados “PyPM repositories”
 
+- En un proyecto Django que se debe ignorar para usar git. Vea: https://github.com/django/django/blob/main/.gitignore. ¿Qué otros tipos de archivos se deberían agregar a este archivo?
+Aparte de los indicados en la pagina se deberian agregar
+    
+```
+# Byte-compiled / optimized / DLL files
+*$py.class
 
-![Ejercicio2_d](images/ambito.sh.png)
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+# Exclude collected Django static files
+static_collected
+
+# Exclude machine-specific vs code settings
+.vscode/settings.json
+    
+``` 
+y aparte algunos otros que se crean si se usa un editor de codigo
+visualStudio
+    
+``` 
+    
+# Exclude machine-specific vs code settings
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history
+``` 
+o Sublime Text
+    
+``` 
+*.tmlanguage.cache 
+*.tmPreferences.cache 
+*.stTheme.cache 
+*.sublime-workspace 
+*.sublime-project 
+``` 
+    
+- Utilice python manage.py shell para agregar objetos. ¿Qué archivos se modificaron al agregar más objetos?
+El shell de django ejecuta un intérprete que te permite modificar recursos ya sea de la base de datos o de cualquier otro recurso usado en el proyecto django
 
 </tr>
 </tr>
@@ -318,9 +443,21 @@ Quit the server with CONTROL-C.
 <ul>
 <li>Cannon Jason, Shell Scripting: How to Automate Command Line Tasks Using Bash Scripting and Shell
 Programming. 2015.</li>
+<li>https://peps.python.org/pep-0008</li>
+<li>https://setuptools.pypa.io/en/latest/deprecated/easy_install.html#:~:text=Easy%20Install%20is%20a%20python,via%20the%20distutils%20mailing%20list.</li>
+<li>https://en.wikipedia.org/wiki/Setuptools</li>
+<li>https://pypi.org/project/pip/</li>
+<li>https://en.wikipedia.org/wiki/Python_Package_Manager</li>
+<li>https://www.iteramos.com/pregunta/5350/por-que-usar-pip-sobre-easy_install</li>
+<li>https://svn.python.org/projects/sandbox/trunk/setuptools/doc/formats.txt</li>
+<li>https://github.com/microsoft/python-sample-vscode-django-tutorial/blob/master/.gitignore</li>
+<li>https://djangowaves.com/tips-tricks/gitignore-for-a-django-project/</li>
+<li>https://stackoverflow.com/questions/60623885/in-command-line-what-does-python-file-py-shell-do</li>
+<li>https://www.iteramos.com/pregunta/5350/por-que-usar-pip-sobre-easy_install</li>
+<li>https://svn.python.org/projects/sandbox/trunk/setuptools/doc/formats.txt</li>
+<li>https://djangowaves.com/tips-tricks/gitignore-for-a-django-project/</li>
+<li>https://stackoverflow.com/questions/60623885/in-command-line-what-does-python-file-py-shell-do</li>
 
-
-<li></li>
 </ul>
 </td>
 </<tr>
