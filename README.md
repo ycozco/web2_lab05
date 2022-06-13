@@ -262,7 +262,7 @@ Quit the server with CONTROL-C.
 
 - Crear un video tutorial donde realice las operaciones CRUD (URL public reproducible online) <br>
 - Adjuntar URL del video en el informe. <br>
-- URL video: https://www.youtube.com/watch?v=Q-_X-_X-_X-
+- URL video: https://youtu.be/9z2kUeqp83c
 <br>
 <tr><td colspan="6">II. SOLUCIÓN DE CUESTIONARIO: <br>
 - ¿Cuál es un estándar de codificación para Python? Ejemplo: Para PHP en el proyecto Pear https://pear.php.net/manual/en/standards.php<br>
