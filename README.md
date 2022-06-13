@@ -249,6 +249,18 @@ Quit the server with CONTROL-C.
 ![Login](images/login.png)
 - Al iniciar sesion nos dirige al panel de administracion:
 ![AdminPanel](images/panel_admin.png)
+- En el panel de administracion, nos dirijimos donde el modelo de nuestro blog (posts)
+![AdminPanelPosts](images/panel_admin_posts.png)
+- En este panel podemos crear nuevos posts de la forma 
+![AdminPanelPosts](images/panel_admin_posts_create.png)
+- Damos click sobre algun elemento previamente creado, para poder ver mas detalles, tenemos la opcion de editar todas las casillas
+![AdminPanelPosts](images/panel_admin_posts_view.png)
+- En la opcion Editar, podemos editar el post que deseemos.
+![AdminPanelPosts](images/panel_admin_posts_edit.png)
+- En la opcion Eliminar, podemos eliminar el post que deseemos.
+![AdminPanelPosts](images/panel_admin_posts_del1.png)
+![AdminPanelPosts](images/panel_admin_posts_del2.png)
+
 </tr>
 <tr>
 
