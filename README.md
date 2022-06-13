@@ -50,7 +50,6 @@
 <li>Cozco Mauri Yoset -------------------- ycozco@unsa.edu.pe</li>
 <li>Garay Bedregal César Alejandro -------- cgarayb@unsa.edu.pe</li>
 <li>Sulla Quispe Vladimir ----------------- vsullaq@unsa.edu.pe</li>
-<li> 
 </ul>
 </td>
 </<tr>
@@ -75,28 +74,43 @@
 <tr><td colspan="6">
 <tr>
 
-## I. SOLUCIÓN DE EJERCICIOS PROBLEMAS:
+## I. SOLUCIÓN DE EJERCICIOS PROPUESTOS:
 <br>
 <tr>
--   Las comillas invertidas permiten ejecutar programas dentro de los scripts y almacenar el resultado de
-ejecución en variables. Escriba un script que reciba dos argumentos y que internamente llame al programa
-grep con la opción -n (devuelve el número de línea de la ocurrencia), para luego mostrar el resultado del
-comando grep. Es posible que el resultado de grep devuelva varias líneas, en ese caso la variable será una
-lista de líneas, puede iterar sobre ella para mostrar cada línea por separado.
-    
+- Crea un blog sencillo en un entorno virtual utilizando la guía: https://tutorial.djangogirls.org/es/django_start_project/. 
+- Especificar paso a paso la creación del blog en su informe.
+
+## Entorno Virtual y Configuracion
+
+- Lo primero que debemos tener en cuenta es activar nuestro entorno virtual de trabajo, para poder instalar librerias sin afectar a otros proyectos.
+
 ```bash
-#!/bin/bash
-for keyword in $1
-do
-  printf "%s\n" $keyword
-  for file in $2
-  do
-    RES=`grep -n $keyword $file|cut -d":" -f1|tr "\n" " "`
-    printf "\t%s:\t%s\n" $file "$RES"
-  done
-done
-    
+ncnc@ncnc:~/Desktop/test$ source ./bin/activate
+(test) ncnc@ncnc:~/Desktop/test$
 ```
+- Lo siguiente es instalar Django  par alo cual ejecutamos 
+
+```bash
+(test_2) ncnc@ncnc: pip install Django
+```
+- Instalando Django y dando como resultado:
+```bash
+(test_2) ncnc@ncnc:~/Desktop/test_2$ pip install Django
+Collecting Django
+  Using cached Django-4.0.5-py3-none-any.whl (8.0 MB)
+Collecting asgiref<4,>=3.4.1
+  Using cached asgiref-3.5.2-py3-none-any.whl (22 kB)
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.2-py3-none-any.whl (42 kB)
+Installing collected packages: sqlparse, asgiref, Django
+Successfully installed Django-4.0.5 asgiref-3.5.2 sqlparse-0.4.2
+
+```
+
+- Tenemos el siguiente resultado dado que previamente ya se ha instalado Djando en otra, carpeta
+  Usa los archivos que tiene en Cache, caso contrario deberia descargar.
+
+
 </tr>
 <tr>
 
