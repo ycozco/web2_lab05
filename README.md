@@ -110,7 +110,65 @@ Successfully installed Django-4.0.5 asgiref-3.5.2 sqlparse-0.4.2
 - Tenemos el siguiente resultado dado que previamente ya se ha instalado Djando en otra, carpeta
   Usa los archivos que tiene en Cache, caso contrario deberia descargar.
 
+- Una ves instalado Django, debemos iniciar nuestro proyecto de la siguiente manera
 
+```bash
+django-admin startproject blog
+
+```
+- Tendriamos un resultado:
+
+```bash
+blog
+├── manage.py
+└── blog
+    ├── asgi.py
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+```
+lo siguiente es crear el modelo de nuestro blog, este esta ubicado en la carpeta ```blog/models.py```
+
+```python
+from django.conf import settings
+from django.db import models
+from django.utils import timezone
+
+
+class Post(models.Model):
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.title
+```
+- como podemos observar el modelo de Post tiene los siguientes atributos:
+    -  author: es una clave foranea que hace referencia a la tabla de usuarios
+    -  title: es un atributo de tipo cadena de caracteres con una longitud maxima de 200 caracteres
+    -  text: es un atributo de tipo cadena de caracteres
+    -  created_date: es un atributo de tipo fecha y hora
+    -  published_date: es un atributo de tipo fecha y hora
+- Despues de esto tenemos que registrar nuestro modelo dentro de admin.py que se ubica en ```blog/admin.py```
+
+```python
+from django.contrib import admin
+# Register your models here.
+from .models import Post
+
+admin.site.register(Post)
+```
+- Deberia quedar asi nuestro archivo ```admin.py```
+- El siguiente paso es agregar como una aplicacion instalada en el archivo mysite/settings.py
 </tr>
 <tr>
 
