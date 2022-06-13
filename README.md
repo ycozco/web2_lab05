@@ -38,16 +38,19 @@
 </tr>
 <tr>
 <tr> <td>Tipo de Practica</td>
-    <td>Grupal;</td><td>X</td>
+    <td>Grupal</td><td>X</td>
         <td>Individual</td><td>Maximo de estudiantes</td><td></td>
     </td> 
 </tr>
 
 <td>FECHA INICIO::</td><td>Jun-2022</td><td>FECHA FIN:</td><td>11-Jun-2022</td><td>DURACIÓN:</td><td>04 horas</td>
 </tr>
-<tr><td colspan="6">ALUMNO:
+<tr><td colspan="6">INTEGRANTES:
 <ul>
-<li>Cozco Mauri Yoset (ycozco@unsa.edu.pe)</li>
+<li>Cozco Mauri Yoset -------------------- ycozco@unsa.edu.pe</li>
+<li>Garay Bedregal César Alejandro -------- cgarayb@unsa.edu.pe</li>
+<li>Sulla Quispe Vladimir ----------------- vsullaq@unsa.edu.pe</li>
+<li> 
 </ul>
 </td>
 </<tr>
