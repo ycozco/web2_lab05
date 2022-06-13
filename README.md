@@ -38,8 +38,8 @@
 </tr>
 <tr>
 <tr> <td>Tipo de Practica</td>
-    <td>Individual</td><td>X</td>
-        <td>Grupal</td><td>Maximo de estudiantes</td><td></td>
+    <td>Grupal;</td><td>X</td>
+        <td>Individual</td><td>Maximo de estudiantes</td><td></td>
     </td> 
 </tr>
 
