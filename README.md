@@ -168,88 +168,24 @@ from .models import Post
 admin.site.register(Post)
 ```
 - Deberia quedar asi nuestro archivo ```admin.py```
-- El siguiente paso es agregar como una aplicacion instalada en el archivo mysite/settings.py
+- El siguiente paso es agregar como una aplicacion instalada en el archivo m```ysite/settings.py```
+
 </tr>
 <tr>
 
--   Escriba el script ambito.sh, que modifique la variable de ambiente PATH, agregándole un par de rutas. El
-programa deberá imprimir el valor de la variable PATH antes y después del cambio.
-    
-```bash
-#!/bin/bash
-echo "PATH antes de cambiar: $PATH"
-export PATH=$PATH:/home/user/bin:/home/user/bin/subdir
-echo "PATH después de cambiar: $PATH"
-```
 
 </tr>
 
 <tr> 
 
--   Escriba el script dosArgumentos.sh que reciba dos argumentos y los muestre en la salida estándar, si el script
-recibe una cantidad distinta de argumentos deberá mostrar un mensaje de error y terminar su ejecución.
-Este ejercicio lo puede resolver con if, then, else ó con sólo if, then y usando return para terminar la
-ejecución del programa.
-        
-```bash
-#!/bin/bash
-if [ $# -eq 2 ]
-then
-    echo "El primer argumento es $1 y el segundo es $2"
-else
-    echo "Error: Cantidad de argumentos incorrecta"
-fi
-```
-</td><tr>
--   Usted deberá escribir un script que reciba dos argumentos, cada argumento será una lista de valores. El primer
-    argumento contendrá una lista de palabras, el segundo argumento contendrá una lista de archivos de texto.
-    Su programa deberá usar el programa grep o ed, para buscar cada una de las palabras en cada uno de los
-    archivos, reportando las líneas en que las palabras fueron encontradas. A continuación se muestra un
-    ejemplo de su funcionamiento:
-    
-```bash 
-$ index.sh "los sangre escribir" "poema20.txt cantocoral.txt"
-los
-poema20.txt: 1 4 8 17 32 34 49
-cantocoral.txt: 12 17 25 39
-sangre
-poema20.txt:
-cantocoral.txt: 11
-escribir
-poema20.txt: 1 8 17
-cantocoral.txt:
-```
+-   
 
-Usted deberá incluir todos los experimentos que le ayudaron a resolver este problema, por lo que deberá
-hacer tantos commits como sean necesarios. Sin esos experimentos que demuestren cómo resolvió el
-problema, no tendrá nota.
-Puede usar estos archivos, para probar su programa: <br>
-● https://drive.google.com/file/d/1EphGW4yHMlV2XVv0GHe4eu8nFnHIbydL/view?usp=sharing <br>
-● https://drive.google.com/file/d/1dumtV1ReByIVVCqy86l2AyGUYS3dB0qw/view?usp=sharing
-
-
-```bash
-#!/bin/bash
-for keyword in $1
-do
-  printf "%s\n" $keyword
-  for file in $2
-  do
-    RES=`grep -n $keyword $file|cut -d":" -f1|tr "\n" " "`
-    printf "\t%s:\t%s\n" $file "$RES"
-  done
-done
-```
 
 </tr>
 
 
 <tr><td colspan="6">II. SOLUCIÓN DE CUESTIONARIO: <br>
 
-- Ejecute el programa ambito.sh y luego verifique el valor de la variable PATH desde línea de comandos. ¿Qué
-puede concluir de este experimento?
-Se concateno el nuevo valor entregado por el usuario al valor original de la variable PATH.
-Al modificar la variable PATH, podemos actualizar el valor tanto borrando o concatenando nuevos valores.
 
 ![Ejercicio2_d](images/ambito.sh.png)
 
