@@ -168,8 +168,83 @@ from .models import Post
 admin.site.register(Post)
 ```
 - Deberia quedar asi nuestro archivo ```admin.py```
-- El siguiente paso es agregar como una aplicacion instalada en el archivo m```ysite/settings.py```
+- El siguiente paso es agregar como una aplicacion instalada en el archivo ```mysite/settings.py```
 
+```python
+# Application definition
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog.apps.BlogConfig',
+]
+```
+- Para poder evitar errores es necesario verificar tener el archivo ```blog/apps.py```
+
+```python
+from django.apps import AppConfig
+
+class BlogConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'blog'
+```
+- Verificando que nuestro archivo este asi. 
+- Ahora es hora de hacer el migrate en nuestro proyecto.
+- En nuestro caso deberiamos hacerlo desde el directorio ```web2_lab05``` donde tambien se encuentra el archivo ```manage.py```.
+
+```bash
+python manage.py migrate
+Applying sessions.0001_initial... OK 
+```
+- Realizamos la migracion, dandonos la ultima linea como la mostrada. 
+- Para el manejo de nuestra aplicacion, es necesario tener un SuperUsuario, ejecutando el siguiente codigo
+
+```bash
+python manage.py createsuperuser
+```
+
+- En este caso, debemos ingresar los siguientes datos:
+
+```bash
+(test) ncnc@ncnc:~/Desktop/test/web2_lab05$ python manage.py createsuperuser
+Nombre de usuario (leave blank to use 'ncnc'): yosetc
+Dirección de correo electrónico: ycozco1@unsa.edu.pe
+Password: 
+Password (again): 
+Esta contraseña es demasiado corta. Debe contener al menos 8 caracteres.
+Esta contraseña es demasiado común.
+Esta contraseña es completamente numérica.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+```
+- A continuacion realizaremos la migracion, de la forma:
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+- Ejecutamos el servidor para poder visualizar nuestros avances y resultados:
+
+```bash
+python manage.py runserver
+
+```
+```bash
+(test) ncnc@ncnc:~/Desktop/test/web2_lab05$ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 12, 2022 - 22:00:22
+Django version 4.0.5, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+```
 </tr>
 <tr>
 
