@@ -246,19 +246,24 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 
 ```
+- Podemos acceder al panel de administracion de nuestro proyecto en la direccion: - http://127.0.0.1:8000/admin
+
+- Podemos ver el inicio de sesion, donde debemos iniciar con los datos de nuestro superusuario:
+![Login](images/login.png)
+- Al iniciar sesion nos dirige al panel de administracion:
+![AdminPanel](images/panel_admin.png)
+- En el panel de administracion, nos dirijimos donde el modelo de nuestro blog (posts)
+![AdminPanelPosts](images/panel_admin_posts.png)
+- En este panel podemos crear nuevos posts de la forma 
+![AdminPanelPosts](images/panel_admin_posts_create.png)
+- Damos click sobre algun elemento previamente creado, para poder ver mas detalles, tenemos la opcion de editar todas las casillas
+![AdminPanelPosts](images/panel_admin_posts_view.png)
+- En la opcion Editar, podemos editar el post que deseemos.
+![AdminPanelPosts](images/panel_admin_posts_edit.png)
+- En la opcion Eliminar, podemos eliminar el post que deseemos.
+![AdminPanelPosts](images/panel_admin_posts_del1.png)
+![AdminPanelPosts](images/panel_admin_posts_del2.png)
 </tr>
-<tr>
-
-
-</tr>
-
-<tr> 
-
--   
-
-
-</tr>
-
 
 <tr><td colspan="6">II. SOLUCIÓN DE CUESTIONARIO: <br>
 - ¿Cuál es un estándar de codificación para Python? Ejemplo: Para PHP en el proyecto Pear https://pear.php.net/manual/en/standards.php<br>
