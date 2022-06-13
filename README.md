@@ -55,15 +55,12 @@
 </<tr>
 <tr><td colspan="6">DOCENTES:
 <ul>
-<li> Edson Francisco Luque Mamani(eluquem@unsa.edu.pe)</li>
+<li>Richart Smith Escobedo Quispe (rescobedoq@unsa.edu.pe)</li>
 </ul>
 </td>
 </<tr>
 </tdbody>
 </table>
-
-
-
 
 <table>
 <theader>
