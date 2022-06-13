@@ -447,8 +447,6 @@ El shell de django ejecuta un intérprete que te permite modificar recursos ya s
 </tr>
 <tr><td colspan="6">
 <ul>
-<li>Cannon Jason, Shell Scripting: How to Automate Command Line Tasks Using Bash Scripting and Shell
-Programming. 2015.</li>
 <li>https://peps.python.org/pep-0008</li>
 <li>https://setuptools.pypa.io/en/latest/deprecated/easy_install.html#:~:text=Easy%20Install%20is%20a%20python,via%20the%20distutils%20mailing%20list.</li>
 <li>https://en.wikipedia.org/wiki/Setuptools</li>
