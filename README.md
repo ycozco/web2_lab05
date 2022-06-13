@@ -1,6 +1,4 @@
-﻿#PS_LABS
-# INFORME DE LABORATORIO 04
-<div align="center">
+﻿<div align="center">
 <table>
     <theader>
         <tr>
@@ -31,8 +29,8 @@
 <tr><th colspan="6">INFORMACIÓN BÁSICA</th></tr>
 </theader>
 <tbody>
-<tr><td>ASIGNATURA:</td><td colspan="5">Programación de Sistemas</td></tr>
-<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Punteros</td></tr>
+<tr><td>ASIGNATURA:</td><td colspan="5">Programación Web</td></tr>
+<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Laboratorio 05</td></tr>
 <tr>
 <td>NÚMERO DE PRÁCTICA:</td><td>05</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
