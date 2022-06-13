@@ -260,10 +260,10 @@ Quit the server with CONTROL-C.
 
 
 <tr><td colspan="6">II. SOLUCIÓN DE CUESTIONARIO: <br>
-- ¿Cuál es un estándar de codificación para Python? Ejemplo: Para PHP en el proyecto Pear https://pear.php.net/manual/en/standards.php
+- ¿Cuál es un estándar de codificación para Python? Ejemplo: Para PHP en el proyecto Pear https://pear.php.net/manual/en/standards.php<br>
 Asi como en PHP se usa Pear python tiene a PEP 8 >https://peps.python.org/pep-0008/
     
-- ¿Qué diferencias existen entre EasyInstall, pip, y PyPM?
+- ¿Qué diferencias existen entre EasyInstall, pip, y PyPM?<br>
 Los tres son instaladores, compiladores y administradores de paquetes de python las diferencias radican en
 PyPM no es gratuito y solo se usa con ActiveState ActivePython
 En EasyInstall si se interrumpe por alguna razón la instalacion se dejaron algunos rastros, con pip no ocurre esto
@@ -274,7 +274,7 @@ EasyInstall está inspirado en rubygems y esta basado en el formato PythonEggs
 PyPM esta inspirado en el administrador de paquetes de perl
 PyPM utiliza colecciones de paquetes precompilados llamados “PyPM repositories”
 
-- En un proyecto Django que se debe ignorar para usar git. Vea: https://github.com/django/django/blob/main/.gitignore. ¿Qué otros tipos de archivos se deberían agregar a este archivo?
+- En un proyecto Django que se debe ignorar para usar git. Vea: https://github.com/django/django/blob/main/.gitignore. ¿Qué otros tipos de archivos se deberían agregar a este archivo?<br>
 Aparte de los indicados en la pagina se deberian agregar
     
 ```
@@ -402,7 +402,7 @@ o Sublime Text
 *.sublime-project 
 ``` 
     
-- Utilice python manage.py shell para agregar objetos. ¿Qué archivos se modificaron al agregar más objetos?
+- Utilice python manage.py shell para agregar objetos. ¿Qué archivos se modificaron al agregar más objetos?<br>
 El shell de django ejecuta un intérprete que te permite modificar recursos ya sea de la base de datos o de cualquier otro recurso usado en el proyecto django
 
 </tr>
