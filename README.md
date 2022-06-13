@@ -222,9 +222,10 @@ Bypass password validation and create user anyway? [y/N]: y
 Superuser created successfully.
 ```
 - A continuacion realizaremos la migracion, de la forma:
+- Recordemos que seguimos en la ruta ```web2_lab05```donde se encuentra el archivo ```manage.py```.
 
 ```bash
-python manage.py makemigrations
+python manage.py makemigrations blog
 python manage.py migrate
 ```
 - Ejecutamos el servidor para poder visualizar nuestros avances y resultados:
